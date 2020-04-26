@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import Home from '../components/Home';
 import Messages from '../components/message/Messages'
 import MessageAdd from '../components/message/MessageAdd'
@@ -11,7 +11,7 @@ import UserAdd from '../components/user/UserAdd'
 
 const routing = (
 
-    <Router>
+    <Router basename='/'>
 
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
